@@ -10,6 +10,7 @@ object RatingHistogram {
     val sparkValue = sc.textFile("data/ml-100k/ml-100k/u.data")
     val result = sparkValue.map(x=>x.split("\t")(2))
    // println(result.countByValue())
+   //Testing comment
   }
 
 }
