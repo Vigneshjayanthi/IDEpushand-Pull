@@ -9,7 +9,7 @@ object RatingHistogram {
     val sc = new SparkContext("local[*]","RatingsCounter");
     val sparkValue = sc.textFile("data/ml-100k/ml-100k/u.data")
     val result = sparkValue.map(x=>x.split("\t")(2))
-    println(result.countByValue())
+   // println(result.countByValue())
   }
 
 }
